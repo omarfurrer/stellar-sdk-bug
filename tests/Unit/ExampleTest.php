@@ -20,7 +20,7 @@ class ExampleTest extends TestCase
     
     public function testKeypair()
     {
-        $sourceKeypair = Keypair::newFromSeed('SAA2U5UFW65DW3MLVX734BUQIHAWANQNBLTFT47X2NVVBCN7X6QC5AOG');
-        $this->assertEquals("GD4JRFLPF4AGYQTLCMZ7Q7DRLGQZQTGWOOKDUCNRVKG66G5ZVYYFT76M", $sourceKeypair);
+        $keyPair = Keypair::newFromSeed('SAA2U5UFW65DW3MLVX734BUQIHAWANQNBLTFT47X2NVVBCN7X6QC5AOG');
+        $this->assertEquals("GD4JRFLPF4AGYQTLCMZ7Q7DRLGQZQTGWOOKDUCNRVKG66G5ZVYYFT76M", $keyPair->getPublicKey());
     }
 }
